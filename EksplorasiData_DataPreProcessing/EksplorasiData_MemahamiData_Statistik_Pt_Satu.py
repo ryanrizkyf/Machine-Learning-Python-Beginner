@@ -19,3 +19,9 @@ print('\nLima data teratas:\n', dataset.head())
 print('\nInformasi dataset:')
 print(dataset.info())
 print('\nStatistik deskriptif:\n', dataset.describe())
+
+# dengan mengetahui dimensi data yaitu jumlah baris dan kolom,
+# kita bisa mengetahui apakah data kita terlalu banyak atau justru sangat sedikit.
+# Jika data terlalu banyak, waktu melatih model akan lebih lama,
+# sedangkan jika data terlalu sedikit, performansi model yang kita hasilkan mungkin tidak cukup bagus,
+# karena tidak mampu mengenali pola dengan baik.
