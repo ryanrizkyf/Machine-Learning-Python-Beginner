@@ -14,5 +14,6 @@ sehingga semua feature berada dalam rentang nilai tersebut, yaitu nilai max = 1 
 Data rescaling ini dengan mudah dapat dilakukan di Python 
 menggunakan .MinMaxScaler( ) dari Scikit-Learn library.
 
+Kenapa ke range 0 - 1, tidak menggunakan range yang lain?
 Rumus Rescaling, dengan rumus ini, nilai max data akan menjadi 1 dan nilai min menjadi 0; 
 dan nilai lainnya berada di rentang keduanya. Rumus ini tidak memungkinkan adanya rentang nilai selain 0 – 1.
