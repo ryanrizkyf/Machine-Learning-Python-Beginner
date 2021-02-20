@@ -1,0 +1,18 @@
+Setelah berhasil menangani missing value, sekarang mari kita mempelajari tahapan preprocessing selanjutnya. 
+Tolong tampilkan kembali 5 dataset teratas dan deskripsi statistik dari dataset. 
+Coba perhatikan, rentang nilai dari setiap feature cukup bervariasi. 
+Misalnya, ProductRelated_Duration vs BounceRates.  
+ProductRelated_Duration memiliki rentang nilai mulai dari 0 - 5000; 
+sedangkan BounceRates rentang nilainya 0 - 1. Bisa dilihat?
+
+Beberapa machine learning seperti K-NN dan gradient descent mengharuskan semua variabel memiliki 
+rentang nilai yang sama, karena jika tidak sama, feature dengan rentang nilai terbesar misalnya 
+ProductRelated_Duration otomatis akan menjadi feature yang paling mendominasi dalam proses training/komputasi, 
+sehingga model yang dihasilkan pun akan sangat bias. Oleh karena itu, sebelum memulai training model, 
+kita terlebih dahulu perlu melakukan data rescaling ke dalam rentang 0 dan 1, 
+sehingga semua feature berada dalam rentang nilai tersebut, yaitu nilai max = 1 dan nilai min = 0. 
+Data rescaling ini dengan mudah dapat dilakukan di Python 
+menggunakan .MinMaxScaler( ) dari Scikit-Learn library.
+
+Rumus Rescaling, dengan rumus ini, nilai max data akan menjadi 1 dan nilai min menjadi 0; 
+dan nilai lainnya berada di rentang keduanya. Rumus ini tidak memungkinkan adanya rentang nilai selain 0 – 1.
