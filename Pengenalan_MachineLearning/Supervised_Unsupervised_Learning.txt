@@ -1,0 +1,10 @@
+Machine Learning itu terbagi menjadi 2 tipe yaitu supervised dan unsupervised Learning. 
+Jika LABEL/CLASS dari dataset sudah diketahui maka dikategorikan sebagai supervised learning, 
+dan jika Label belum diketahui maka dikategorikan sebagai unsupervised learning.
+
+Kalau kasusnya yang email tadi, masuknya ke mana ya?
+
+Mengenali email sebagai spam atau bukan spam tergolong sebagai supervised learning, 
+karena kita mengolah dataset yang berisi data point yang telah diberi LABEL ”spam” dan “not spam”. 
+Sedangkan jika kita ingin mengelompokkan customer ke dalam beberapa segmentasi berdasarkan variabel-variabel 
+seperti pendapatan, umur, hobi, atau jenis pekerjaan, maka tergolong sebagai unsupervised learning,

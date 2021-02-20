@@ -1,0 +1,12 @@
+Machine Learning adalah teknik dimana komputer dapat mengekstraksi atau mempelajari pola dari suatu data, 
+kemudian dengan pola yang telah dipelajari dari data historis, komputer mampu mengenali dan memprediksi trend, 
+hasil atau kejadian di masa mendatang atau dari observasi baru tanpa perlu diprogram secara eksplisit.
+
+Sebagai contoh, pernah buka folder spam di email kamu? Di sana ada banyak email promosi dan 
+sebagainya yang dikirim secara acak ke email kita padahal tidak kita inginkan. Lalu bagaimana, 
+perusahaan seperti Google, Yahoo, Hotmail, Microsoft dan perusahaan penyedia lainnya secara otomatis 
+memfilter pesan spam ini? Tentunya dengan machine learning.
+
+Contoh penggunaan machine learning lainnya, seperti memprediksi harga saham, 
+pengenalan wajah (face recognition), mengenali tulisan tangan, mendeteksi fraud/scam kartu kredit, 
+memprediksi cuaca, dan memprediksi permintaan barang,

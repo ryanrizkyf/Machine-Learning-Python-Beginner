@@ -1,0 +1,18 @@
+Dalam pembuatan model machine learning tentunya dibutuhkan data. 
+Sekumpulan data yang digunakan dalam machine learning disebut DATASET, 
+yang kemudian dibagi/di-split menjadi training dataset dan test dataset.
+
+TRAINING DATASET digunakan untuk membuat/melatih model machine learning, 
+sedangkan TEST DATASET digunakan untuk menguji performa/akurasi dari model yang telah dilatih/di-training.
+
+Teknik atau pendekatan yang digunakan untuk membangun model disebut ALGORITHM 
+seperti Decision Tree, K-NN, Linear Regression, Random Forest, dsb. 
+dan output atau hasil dari proses melatih algorithm dengan suatu dataset disebut MODEL.
+
+Umumnya dataset disajikan dalam bentuk tabel yang terdiri dari baris dan kolom. 
+Bagian Kolom adalah FEATURE atau VARIABEL data yang dianalisa, 
+sedangkan bagian baris adalah DATA POINT/OBSERVATION/EXAMPLE.
+
+Hal yang menjadi target prediksi atau hal yang akan diprediksi dalam machine learning disebut 
+LABEL/CLASS/TARGET. Dalam statistika/matematika, LABEL/CLASS/TARGET ini dinamakan dengan Dependent Variabel, 
+dan FEATURE adalah Independent Variabel.
