@@ -1,14 +1,14 @@
-# Dalam dataset user online purchase, label target sudah diketahui,
-# yaitu kolom Revenue yang bernilai 1 untuk user yang membeli dan 0 untuk yang tidak membeli,
-# sehingga pemodelan yang dilakukan ini adalah klasifikasi.
-# Nah, untuk melatih dataset menggunakan Scikit-Learn library,
-# dataset perlu dipisahkan ke dalam Features dan Label/Target.
-
+# Setelah model/classifier terbentuk, selanjutnya kita menggunakan model ini untuk
+# memprediksi LABEL dari testing dataset (X_test), menggunakan fungsi .predict().
+# Fungsi ini akan mengembalikan hasil prediksi untuk setiap data point dari X_test dalam bentuk array.
+# Proses ini kita kenal dengan TESTING.
 
 # dataset = https://dqlab-dataset.s3-ap-southeast-1.amazonaws.com/pythonTutorial/online_raw.csv
 
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.preprocessing import LabelEncoder
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.model_selection import train_test_split
 import numpy as np
 import pandas as pd
 dataset = pd.read_csv(
@@ -98,3 +98,28 @@ y = dataset['Revenue']
 # checking the shapes
 print("Shape of X:", X.shape)
 print("Shape of y:", y.shape)
+
+# Gunakan test_size = 0.2 dan tambahkan argumen random_state = 0,  pada fungsi train_test_split( ).
+# splitting the X, and y
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=0.2, random_state=0)
+# checking the shapes
+print("Shape of X_train :", X_train.shape)
+print("Shape of y_train :", y_train.shape)
+print("Shape of X_test :", X_test.shape)
+print("Shape of y_test :", y_test.shape)
+
+# Kita akan menggunakan Decision Tree.
+# Kita hanya perlu memanggil fungsi DecisionTreeClassifier() yang kita namakan “model”.
+# Kemudian menggunakan fungsi .fit() dan X_train, y_train untuk
+# melatih classifier tersebut dengan training dataset.
+# Call the classifier
+model = DecisionTreeClassifier()
+# Fit the classifier to the training data
+model = model.fit(X_train, y_train)
+
+# Untuk memprediksi LABEL dari testing dataset (X_test), menggunakan fungsi .predict().
+# Fungsi ini akan mengembalikan hasil prediksi untuk setiap data point dari X_test dalam bentuk array.
+# Apply the classifier/model to the test data
+y_pred = model.predict(X_test)
+print(y_pred.shape)

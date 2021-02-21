@@ -4,16 +4,16 @@
 # Untuk penjelasan ini, kita akan mempraktekkan langsung ya. Kita akan memanfaatkan Pandas library.
 # Pandas cukup powerful untuk digunakan dalam menganalisa, memanipulasi dan membersihkan data.
 
-# Pertama- tama,  kita check dimensi data kita terlebih dahulu.
-# Silakan load datanya dan gunakan .shape, .head(), .info(), dan .describe()
-# untuk mengeksplorasi dataset secara berurut.
-
 # Dataset ini adalah data pembeli online yang mengunjungi website dari suatu e-commerce selama setahun,
 # yaitu 'https://dqlab-dataset.s3-ap-southeast-1.amazonaws.com/pythonTutorial/online_raw.csv'
 
 import pandas as pd
 dataset = pd.read_csv(
     'online_raw.csv')
+
+# Pertama- tama,  kita check dimensi data kita terlebih dahulu.
+# Silakan load datanya dan gunakan .shape, .head(), .info(), dan .describe()
+# untuk mengeksplorasi dataset secara berurut.
 print('Shape dataset:', dataset.shape)
 print('\nLima data teratas:\n', dataset.head())
 print('\nInformasi dataset:')

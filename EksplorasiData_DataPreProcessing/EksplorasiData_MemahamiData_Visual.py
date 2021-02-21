@@ -14,6 +14,10 @@ import matplotlib.pyplot as plt
 import pandas as pd
 dataset = pd.read_csv(
     'online_raw.csv')
+
+# Pertama- tama,  kita check dimensi data kita terlebih dahulu.
+# Silakan load datanya dan gunakan .shape, .head(), .info(), dan .describe()
+# untuk mengeksplorasi dataset secara berurut.
 print('Shape dataset:', dataset.shape)
 print('\nLima data teratas:\n', dataset.head())
 print('\nInformasi dataset:')
