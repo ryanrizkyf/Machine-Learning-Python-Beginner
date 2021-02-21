@@ -1,0 +1,8 @@
+Scikit-learn adalah library untuk machine learning bagi para pengguna python yang memungkinkan kita 
+melakukan berbagai pekerjaan dalam Data Science, seperti regresi (regression), klasifikasi (classification), 
+pengelompokkan/penggugusan (clustering), data preprocessing, dimensionality reduction, dan model selection 
+(pembandingan, validasi, dan pemilihan parameter maupun model).
+
+Ada beberapa library machine learning di Python seperti Keras, tetapi Scikit - Learn 
+adalah yang paling basic sehingga jika kita menguasai scikit-learn, 
+kita dapat dengan mudah mempelajari library machine learning yang lain
