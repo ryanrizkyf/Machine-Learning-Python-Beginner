@@ -26,6 +26,9 @@ dataset = pd.read_csv(
 X = dataset.drop(['Revenue'], axis=1)
 # assigning the target column Revenue to y
 y = dataset['Revenue']
+# checking the shapes
+print("Shape of X:", X.shape)
+print("Shape of y:", y.shape)
 
 # Gunakan test_size = 0.2 dan tambahkan argumen random_state = 0,  pada fungsi train_test_split( ).
 # splitting the X, and y
