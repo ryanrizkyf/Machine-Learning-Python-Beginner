@@ -14,7 +14,6 @@ dataset = pd.read_csv(
 # Variabel Feature akan terdiri dari variabel yang dideklarasikan sebagai
 # X dan [Revenue] adalah variabel Target yang dideklarasikan sebagai y.
 # Gunakan fungsi drop() untuk menghapus kolom [Revenue] dari dataset.
-
 # removing the target column Revenue from dataset and assigning to X
 X = dataset.drop(['Revenue'], axis=1)
 # assigning the target column Revenue to y
