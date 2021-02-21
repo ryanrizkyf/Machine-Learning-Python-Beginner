@@ -1,0 +1,14 @@
+Jika dataset memiliki jumlah data False Negatif dan False Positif yang seimbang (Symmetric), 
+maka bisa gunakan Accuracy, tetapi jika tidak seimbang, maka sebaiknya menggunakan F1-Score.
+
+Dalam suatu problem, jika lebih memilih False Positif lebih baik terjadi daripada False Negatif, 
+misalnya: Dalam kasus Fraud/Scam, kecenderungan model mendeteksi transaksi sebagai fraud walaupun 
+kenyataannya bukan, dianggap lebih baik, daripada transaksi tersebut tidak terdeteksi sebagai fraud 
+tetapi ternyata fraud. Untuk problem ini sebaiknya menggunakan Recall.
+
+Sebaliknya, jika lebih menginginkan terjadinya True Negatif dan sangat tidak menginginkan terjadinya 
+False Positif, sebaiknya menggunakan Precision.
+
+Contohnya adalah pada kasus klasifikasi email SPAM atau tidak. Banyak orang lebih memilih 
+jika email yang sebenarnya SPAM namun diprediksi tidak SPAM (sehingga tetap ada pada kotak masuk email kita), 
+daripada email yang sebenarnya bukan SPAM tapi diprediksi SPAM (sehingga tidak ada pada kotak masuk email).
