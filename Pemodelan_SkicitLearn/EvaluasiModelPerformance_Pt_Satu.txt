@@ -1,0 +1,16 @@
+sekarang kita melanjutkan di tahap terakhir dari modelling yaitu evaluasi hasil model. 
+Untuk evaluasi model performance, setiap algorithm mempunyai metrik yang berbeda-beda. 
+Sekarang saya akan menjelaskan sedikit metrik apa saja yang umumnya digunakan. 
+Metrik paling sederhana untuk mengecek performansi model adalah accuracy.
+
+Kita bisa munculkan dengan fungsi .score( ). 
+Tetapi, di banyak real problem, accuracy saja tidaklah cukup. 
+Metode lain yang digunakan adalah dengan Confusion Matrix. 
+Confusion Matrix merepresentasikan perbandingan prediksi dan real LABEL 
+dari test dataset yang dihasilkan oleh algoritma ML.
+
+Penjelasan gambar dari Confusion Matrix :
+1. True Positive (TP): Jika user diprediksi (Positif) membeli ([Revenue] = 1]), dan memang benar(True) membeli.
+2. True Negative (TN): Jika user diprediksi tidak (Negatif) membeli dan aktualnya user tersebut memang (True) membeli.
+3. False Positive (FP): Jika user diprediksi Positif membeli, tetapi ternyata tidak membeli (False).
+4. False Negatif (FN): Jika user diprediksi tidak membeli (Negatif), tetapi ternyata sebenarnya membeli.
