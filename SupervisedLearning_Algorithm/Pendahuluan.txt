@@ -1,0 +1,5 @@
+Setelah pemahaman dengan prosedur machine learning modelling.
+Selanjutnya materi akan membahas mengenai machine learning algorithm.
+
+Sebagai dasar, akan dipelajari beberapa algorithm machine learning yaitu Logistic Regression, 
+dan Decision Tree untuk classification problem, dan Linear regression untuk regression problem.

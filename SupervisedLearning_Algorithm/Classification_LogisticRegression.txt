@@ -1,0 +1,31 @@
+Logistic Regression merupakan salah satu algoritma klasifikasi dasar yang cukup popular. 
+Secara sederhana, Logistic regression hampir serupa dengan linear regression, 
+tetapi linear regression digunakan untuk Label atau Target Variable yang berupa numerik atau continuous value, 
+sedangkan Logistic regression digunakan untuk Label atau Target yang berupa categorical/discrete value.
+
+Contoh continuous value adalah harga rumah, harga saham, suhu, dsb; 
+dan contoh dari categorical value adalah prediksi SPAM or NOT SPAM (1 dan 0) 
+atau prediksi customer SUBSCRIBE atau UNSUBSCRIBED (1 dan 0).
+
+Umumnya Logistic Regression dipakai untuk binary classification (1/0; Yes/No; True/False) problem, 
+tetapi beberapa data scientist juga menggunakannya untuk multiclass classification problem. 
+Logistic regression adalah salah satu linear classifier, oleh karena itu, 
+Logistik regression juga menggunakan rumus atau fungsi yang sama seperti linear regression.
+
+Lihat Gambar Rumus_LogisticRegression.png
+
+yang disebut Logit, dimana Variabel 𝑏₀, 𝑏₁, …, 𝑏ᵣ adalah koefisien regresi, 
+dan 𝑥₁, …, 𝑥ᵣ adalah explanatory variable/variabel input atau feature.
+
+Output dari Logistic Regression adalah 1 atau 0; sehingga real value dari fungsi logit ini perlu 
+ditransfer ke nilai di antara 1 dan 0 dengan menggunakan fungsi sigmoid.
+
+Lihat Gambar Fungsi Sigmoid.png
+
+Jadi, jika output dari fungsi sigmoid bernilai lebih dari 0.5, 
+maka data point diklasifikasi ke dalam label/class: 1 atau YES; 
+dan kurang dari 0.5, akan diklasifikasikan ke dalam label/class: 0 atau NO.
+
+Logistic Regression hanya dapat mengolah data dengan tipe numerik. 
+Pada saat preparasi data, pastikan untuk mengecek tipe variabel yang ada dalam dataset 
+dan pastikan semuanya adalah numerik, lakukan data transformasi jika diperlukan.
