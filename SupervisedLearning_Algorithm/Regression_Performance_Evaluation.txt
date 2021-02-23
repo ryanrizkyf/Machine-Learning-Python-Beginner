@@ -1,6 +1,6 @@
 Kita sudah sampai tahap evaluasi. Sudah sejauh ini tapi ada bagian membingungkan.
 
-Kalau mengevaluasi perfoma dari model klasifikasi, aku pakai akurasi dan confusion matrix. 
+Kalau mengevaluasi perfoma dari model klasifikasi, kita pakai akurasi dan confusion matrix. 
 Nah, kalau modenya regression, metode evaluasinya bagaimana ya?
 
 Untuk model regression, kita menghitung selisih antara nilai aktual (y_test) 
