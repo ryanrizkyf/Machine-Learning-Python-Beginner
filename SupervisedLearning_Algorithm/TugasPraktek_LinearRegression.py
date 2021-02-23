@@ -2,6 +2,18 @@
 
 # dataset = https://storage.googleapis.com/dqlab-dataset/pythonTutorial/housing_boston.csv
 
+# Detail Instruksi
+# 1. Pisahkan dataset ke dalam Feature dan Label, gunakan fungsi .drop().
+# Pada dataset ini, label/target adalah variabel MEDV.
+# 2. Checking dan print jumlah data setelah Dataset pisahkan ke dalam Feature dan Label, gunakan .shape().
+# 3. Bagi dataset ke dalam Training dan test dataset, 70% data digunakan untuk training dan 30% untuk testing,
+# gunakan fungsi train_test_split() , dengan random_state = 0.
+# 4. Checking dan print kembali jumlah data dengan fungsi .shape().
+# 5. Import LinearRegression dari sklearn.linear_model.
+# 6. Deklarasikan  LinearRegression regressor dengan nama reg.
+# 7. Fit regressor ke training dataset dengan .fit(), dan gunakan .predict() untuk memprediksi nilai dari
+# testing dataset.
+
 # load dataset
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
