@@ -5,16 +5,16 @@ mengalami perubahan (naik atau turun).
 
 Rumus matematis dari Linear Regression adalah:
 
-Lihat gambar Rumus_LinearRegression.png
+Lihat gambar Rumus_SimpleLinearRegression.png
 
 untuk simple linear regression, atau
 
-Lihat gambar SimpleLinearRegression.png
+Lihat gambar Rumus_MultipleLinearRegression.png
 
 untuk multiple linear regression dengan, y adalah target/label, X adalah feature, 
 dan a,b adalah model parameter (intercept dan slope).
 
-Lihat gambar MultipleLinearRegression.png
+Lihat gambar LinearRegression.png
 
 Perlu diketahui bahwa tidak semua problem dapat diselesaikan dengan linear regression. 
 Untuk pemodelan dengan linear regression, terdapat beberapa asumsi yang harus dipenuhi, yaitu :
