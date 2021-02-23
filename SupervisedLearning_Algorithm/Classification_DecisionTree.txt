@@ -1,0 +1,32 @@
+Decision Tree merupakan salah satu metode klasifikasi yang populer dan banyak diimplementasikan 
+serta mudah diinterpretasi. Decision tree adalah model prediksi dengan struktur pohon 
+atau struktur berhierarki. Decision Tree dapat digunakan untuk classification problem dan regression problem. 
+Secara sederhana, struktur dari decision tree adalah sebagai berikut:
+
+Lihat gambar DecisionTree.png
+
+Decision tree terdiri dari :
+1. Decision Node yang merupakan feature/input variabel;
+2. Branch yang ditunjukkan oleh garis hitam berpanah, yang adalah rule/aturan keputusan, dan
+3. Leaf yang merupakan output/hasil.
+4. Decision Node paling atas dalam decision tree dikenal sebagai akar keputusan, 
+atau feature utama yang menjadi asal mula percabangan. 
+Jadi, decision tree membagi data ke dalam kelompok atau kelas berdasarkan feature/variable input, 
+yang dimulai dari node paling atas (akar), dan terus bercabang ke bawah sampai dicapai cabang akhir atau leaf.
+
+
+Misalnya ingin memprediksi apakah seseorang yang mengajukan aplikasi kredit/pinjaman, 
+layak untuk mendapat pinjaman tersebut atau tidak. Dengan menggunakan decision tree, 
+dapat membreak-down kriteria-kriteria pengajuan pinjaman ke dalam hierarki seperti gambar berikut :
+
+Lihat gambar MengajukanKredit_DecisionTree.png
+
+Seumpama, orang yang mengajukan berumur lebih dari 40 tahun, dan memiliki rumah, 
+maka aplikasi kreditnya dapat diluluskan, sedangkan jika tidak, maka perlu dicek penghasilan orang tersebut. 
+Jika kurang dari 5000, maka permohonan kreditnya akan ditolak. Dan jika usia kurang dari 40 tahun, 
+maka selanjutnya dicek jenjang pendidikannya, apakah universitas atau secondary. 
+Nah, percabangan ini masih bisa berlanjut hingga dicapai percabangan akhir/leaf node.
+
+Seperti yang sudah dilakukan dalam prosedur pemodelan machine learning, 
+selanjutnya dapat dengan mudah melakukan pemodelan decision tree dengan menggunakan scikit-learn module, 
+yaitu DecisionTreeClassifier.
