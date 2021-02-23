@@ -29,3 +29,15 @@ Pemodelan Linear regression menggunakan scikit-learn tidaklah sulit.
 Secara prosedur serupa dengan pemodelan logistic regression. 
 Cukup memanggil LinearRegression dengan terlebih dahulu meng-import fungsi tersebut :
 from sklearn.linear_model import LinearRegression
+
+Setelah memahami konsep dasar dari regression, kita akan berlatih membuat model machine learning 
+dengan Linear regression. Untuk pemodelan ini kita akan menggunakan data ‘Boston Housing Dataset’. 
+Setelah pembelajaran kita sampai di sini, 
+tahu tidak mengapa kita tidak bisa menggunakan data “online purchase”?
+
+Karena untuk linear regression target/label harus berupa numerik, 
+sedangkan target dari online purchase data adalah categorical. Apakah benar?
+
+Tujuan dari pemodelan ini adalah memprediksi harga rumah di Boston berdasarkan feature - feature yang ada. 
+Asumsikan saja bahwa kita sudah melakukan data eksplorasi dan data pre-processing. 
+Jadi, data yang akan digunakan adalah data yang siap untuk diproses ke tahap pemodelan.
