@@ -1,0 +1,22 @@
+Kita sudah sampai tahap evaluasi. Sudah sejauh ini tapi ada bagian membingungkan.
+
+Kalau mengevaluasi perfoma dari model klasifikasi, aku pakai akurasi dan confusion matrix. 
+Nah, kalau modenya regression, metode evaluasinya bagaimana ya?
+
+Untuk model regression, kita menghitung selisih antara nilai aktual (y_test) 
+dan nilai prediksi (y_pred) yang disebut error, adapun beberapa metric yang umum digunakan. 
+
+Mean Squared Error (MSE) adalah rata-rata dari squared error:
+Lihat gambar MeanSquaredError.png
+
+Root Mean Squared Error (RMSE) adalah akar kuadrat dari MSE:
+Lihat gambar RootMeanSquaredError.png
+
+Mean Absolute Error (MAE) adalah rata-rata dari nilai absolut error:
+Lihat gambar MeanAbsoluteError.png
+
+Semakin kecil nilai MSE, RMSE, dan MAE, semakin baik pula performansi model regresi. 
+Untuk menghitung nilai MSE, RMSE dan MAE dapat dilakukan dengan menggunakan fungsi mean_squared_error (),  
+mean_absolute_error () dari scikit-learn.metrics dan untuk RMSE sendiri tidak terdapat fungsi khusus 
+di scikit-learn tapi dapat dengan mudah kita hitung dengan terlebih dahulu menghitung MSE kemudian 
+menggunakan numpy module yaitu, sqrt() untuk memperoleh nilai akar kuadrat dari MSE.
