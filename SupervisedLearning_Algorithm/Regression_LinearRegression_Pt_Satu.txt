@@ -1,0 +1,14 @@
+Regression merupakan metode statistik dan machine learning yang paling banyak digunakan. 
+Seperti yang dijelaskan sebelumnya, regresi digunakan untuk memprediksi output label yang 
+berbentuk numerik atau continuous value. Dalam proses training, model regresi akan menggunakan 
+variabel input (features) dan variabel output (label) untuk mempelajari bagaimana hubungan/pola 
+dari variabel input dan output.
+
+Lihat gambar LinearRegression_Pt_Satu.png
+
+Model regresi terdiri atas 2 tipe yaitu :
+1. Simple regression model → model regresi paling sederhana, 
+hanya terdiri dari satu feature (univariate) dan 1 target.
+2. Multiple regression model → sesuai namanya, terdiri dari lebih dari satu feature (multivariate).
+
+Adapun model regresi yang paling umum digunakan adalah Linear Regression.
