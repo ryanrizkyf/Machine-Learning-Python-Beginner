@@ -1,0 +1,31 @@
+Linear regression digunakan untuk menganalisis hubungan linear antara dependent variabel (feature) 
+dan independent variabel (label). Hubungan linear disini berarti bahwa jika nilai dari independen 
+variabel mengalami perubahan baik itu naik atau turun, maka nilai dari dependen variabel juga 
+mengalami perubahan (naik atau turun). 
+
+Rumus matematis dari Linear Regression adalah:
+
+Lihat gambar Rumus_LinearRegression.png
+
+untuk simple linear regression, atau
+
+Lihat gambar SimpleLinearRegression.png
+
+untuk multiple linear regression dengan, y adalah target/label, X adalah feature, 
+dan a,b adalah model parameter (intercept dan slope).
+
+Lihat gambar MultipleLinearRegression.png
+
+Perlu diketahui bahwa tidak semua problem dapat diselesaikan dengan linear regression. 
+Untuk pemodelan dengan linear regression, terdapat beberapa asumsi yang harus dipenuhi, yaitu :
+1. Terdapat hubungan linear antara variabel input (feature) dan variabel output(label). 
+Untuk melihat hubungan linear feature dan label, dapat menggunakan chart seperti scatter chart. 
+Untuk mengetahui hubungan dari variabel umumnya dilakukan pada tahap eksplorasi data.
+2. Tidak ada multicollinearity antara features. Multicollinearity artinya terdapat dependency antara feature, 
+misalnya saja hanya bisa mengetahui nilai feature B jika nilai feature A sudah diketahui.
+3. Tidak ada autocorrelation dalam data, contohnya pada time-series data.
+
+Pemodelan Linear regression menggunakan scikit-learn tidaklah sulit. 
+Secara prosedur serupa dengan pemodelan logistic regression. 
+Cukup memanggil LinearRegression dengan terlebih dahulu meng-import fungsi tersebut :
+from sklearn.linear_model import LinearRegression
