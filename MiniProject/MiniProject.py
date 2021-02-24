@@ -21,6 +21,7 @@
 # yang sudah disharing sebelumnya. Jadi, tahap-tahap yang perlu dilakukan adalah (langkah ke-1) terlebih dahulu
 
 # Import library
+from sklearn.metrics import confusion_matrix, classification_report
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
 import seaborn as sns
@@ -123,3 +124,20 @@ y_pred = logreg.predict(X_test)
 print("Evaluasi Model Performance:")
 print("Training Accuracy :", logreg.score(X_train, y_train))
 print("Testing Accuracy :", logreg.score(X_test, y_test))
+
+# Di langkah terakhir ini atau langkah ke-7 aku akan melihat performansi model
+# dengan menggunakan confusion matrix dan classification report.
+# Print Confusion matrix dan classification report
+
+# 7. Print Confusion matrix dan classification report
+print("\n[7] Print Confusion matrix dan classification report")
+
+# apply confusion_matrix function to y_test and y_pred
+print("Confusion matrix:")
+cm = confusion_matrix(y_test, y_pred)
+print(cm)
+
+# apply classification_report function to y_test and y_pred
+print("Classification report:")
+cr = classification_report(y_test, y_pred)
+print(cr)
