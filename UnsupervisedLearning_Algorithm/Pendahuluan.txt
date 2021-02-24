@@ -1,0 +1,21 @@
+Seperti yang sudah dijelaskan sebelumnya, Machine Learning terdiri atas 2 tipe yaitu 
+supervised dan unsupervised learning. Kita telah banyak membahas tentang supervised learning 
+yaitu Klasifikasi model dan Regression Model. Sekarang kita akan mempelajari dasar- dasar 
+terkait unsupervised learning.
+
+Unsupervised Learning adalah teknik machine learning dimana tidak terdapat label atau output yang 
+digunakan untuk melatih model. Jadi, model dengan sendirinya akan bekerja untuk menemukan pola atau 
+informasi dari dataset yang ada. Metode unsupervised learning yang dikenal dengan clustering. 
+Sesuai dengan namanya, Clustering memproses data dan mengelompokkannya atau mengcluster objek/sample 
+berdasarkan kesamaan antar objek/sampel dalam satu kluster, dan objek/sample ini cukup berbeda dengan 
+objek/sample di kluster yang lain.
+
+Contohnya pada gambar berikut:
+Lihat gambar UnsupervisedLearning_Clustering.png
+
+Kita tahu dari mana bentuk polanya?
+Pada awalnya kita tidak mengetahui bagaimana pola dari objek/sample, termasuk juga tidak mengetahui 
+bagaimana kesamaan maupun perbedaan antara objek yang satu dengan objek yang lain. 
+Setelah dilakukan clustering, baru dapat terlihat bawah objek/sample tersebut dapat dikelompokkan 
+ke dalam 3 kluster. Untuk menjelaskan tentang metode Clustering, kita akan menggunakan metode clustering 
+yang sangat populer, yaitu K-Means Algorithm yang akan kita praktikkan nanti.
