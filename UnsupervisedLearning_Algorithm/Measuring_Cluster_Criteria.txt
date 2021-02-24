@@ -1,0 +1,28 @@
+Segmentasinya udah jadi nih. 
+Tapi, bagaimana kita tahu bahwa membagi segmentasi ke dalam 5 cluster adalah segmentasi yang paling optimal? 
+Karena jika dilihat pada gambar beberapa data point masih cukup jauh jaraknya dengan centroidnya.
+
+Clustering yang baik adalah cluster yang data point-nya saling rapat/sangat berdekatan satu sama lain 
+dan cukup berjauhan dengan objek/data point di cluster yang lain. 
+Jadi, objek dalam satu cluster tidak tersebut berjauhan. 
+Nah, untuk mengukur kualitas dari clustering, kita bisa menggunakan inertia.
+
+Memang apa fungsi inertia?
+Inertia sendiri mengukur seberapa besar penyebaran object/data point data dalam satu cluster, 
+semakin kecil nilai inertia maka semakin baik. 
+Kita tidak perlu bersusah payah menghitung nilai inertia karena secara otomatis, 
+telah dihitung oleh KMeans( ) ketika algorithm di fit ke dataset. 
+Untuk mengecek nilai inertia cukup dengan print fungsi .inertia_ dari model yang sudah di fit ke dataset.
+
+Kalau begitu, bagaimana caranya mengetahui nilai K yang paling baik dengan inertia yang paling kecil? 
+Apakah harus trial Error dengan mencoba berbagai jumlah cluster?
+
+Benar, kita perlu mencoba beberapa nilai, dan memplot nilai inertia-nya. 
+Semakin banyak cluster maka inertia semakin kecil.
+Lihat gambar Inertia.png
+
+Meskipun suatu clustering dikatakan baik jika memiliki inertia yang kecil tetapi secara praktikal in real life, 
+terlalu banyak cluster juga tidak diinginkan. Adapun rule untuk memilih jumlah cluster yang optimal adalah 
+dengan memilih jumlah cluster yang terletak pada “elbow” dalam intertia plot, 
+yaitu ketika nilai inertia mulai menurun secara perlahan. 
+Jika dilihat pada gambar maka jumlah cluster yang optimal adalah K = 3.
