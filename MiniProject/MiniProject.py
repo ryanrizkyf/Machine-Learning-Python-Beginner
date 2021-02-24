@@ -56,7 +56,7 @@ print(data.corr())
 
 # 3. Data eksplorasi dengan mengecek distribusi label menggunakan fungsi groupby() dan size()
 print("\n[3] Data eksplorasi dengan mengecek distribusi label menggunakan fungsi groupby() dan size()")
-# print(data.groupby('Clicked on Ad').size())
+print(data.groupby('Clicked on Ad').size())
 
 # Di proyek ini, aku akan melanjutkan mengeksplorasi data dengan visualisasi
 # dengan tahap - tahap yang perlu dilakukan adalah (langkah ke-4):
