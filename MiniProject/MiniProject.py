@@ -21,6 +21,8 @@
 # yang sudah disharing sebelumnya. Jadi, tahap-tahap yang perlu dilakukan adalah (langkah ke-1) terlebih dahulu
 
 # Import library
+from sklearn.linear_model import LogisticRegression
+from sklearn.model_selection import train_test_split
 import seaborn as sns
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -53,7 +55,7 @@ print(data.corr())
 
 # 3. Data eksplorasi dengan mengecek distribusi label menggunakan fungsi groupby() dan size()
 print("\n[3] Data eksplorasi dengan mengecek distribusi label menggunakan fungsi groupby() dan size()")
-print(data.groupby('Clicked on Ad').size())
+# print(data.groupby('Clicked on Ad').size())
 
 # Di proyek ini, aku akan melanjutkan mengeksplorasi data dengan visualisasi
 # dengan tahap - tahap yang perlu dilakukan adalah (langkah ke-4):
@@ -79,3 +81,45 @@ plt.show()
 plt.figure()
 sns.pairplot(data)
 plt.show()
+
+# Di bagian proyek (langkah ke-5) ini aku akan mengecek apakah terdapat missing value dari data,
+# jika terdapat missing value dapat dilakukan treatment seperti didrop atau diimputasi
+# dan jika tidak maka dapat melanjutkan ke langkah berikutnya.
+# Cek missing value
+
+# 5. Cek missing value
+print("\n[5] Cek missing value")
+print(data.isnull().sum().sum())
+
+# Pada langkah ke-6 ini aku akan melakukan pemodelan dengan Logistic Regression dengan cara seperti berikut:
+# 1. Lakukan pemodelan dengan Logistic Regression, gunakan perbandingan 80:20 untuk training vs testing :
+# 2. Deklarasikan data ke dalam X dengan mendrop feature/variabel yang bukan numerik, (type = object)
+# dari data (Logistic Regression hanya dapat memproses numerik variabel).
+# Assign Target/Label feature dan assign sebagai y
+# 3. Split X dan y ke dalam training dan testing dataset, gunakan perbandingan 80:20 dan random_state = 42
+# 4. Assign classifier sebagai logreg, kemudian fit classifier ke X_train dan predict dengan X_test.
+# Print evaluation score.
+
+# 6.Lakukan pemodelan dengan Logistic Regression, gunakan perbandingan 80:20 untuk training vs testing
+print("\n[6] Lakukan pemodelan dengan Logistic Regression, gunakan perbandingan 80:20 untuk training vs testing")
+# 6a.Drop Non-Numerical (object type) feature from X, as Logistic Regression can only take numbers, and also drop Target/label, assign Target Variable to y.
+X = data.drop(['Ad Topic Line', 'City', 'Country',
+               'Timestamp', 'Clicked on Ad'], axis=1)
+y = data['Clicked on Ad']
+
+# 6b. splitting the data
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=0.20, random_state=42)
+
+# 6c. Modelling
+# Call the classifier
+logreg = LogisticRegression()
+# Fit the classifier to the training data
+logreg = logreg.fit(X_train, y_train)
+# Prediksi model
+y_pred = logreg.predict(X_test)
+
+# 6d. Evaluasi Model Performance
+print("Evaluasi Model Performance:")
+print("Training Accuracy :", logreg.score(X_train, y_train))
+print("Testing Accuracy :", logreg.score(X_test, y_test))
