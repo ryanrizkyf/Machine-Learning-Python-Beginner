@@ -1,0 +1,38 @@
+Jadi, Algorithm K-Means itu apa dan bagaimana cara kerjanya?
+
+K-Means merupakan tipe clustering dengan centroid based (titik pusat). 
+Artinya kesamaan dari objek/sampel dihitung dari seberapa dekat objek itu dengan centroid atau titik pusat.
+
+Jadi, bagaimana kita mengukur kedekatan objek dan centroid?
+
+Untuk menghitung kedekatan, digunakan perhitungan jarak antar 2 buah data atau jarak Minkowski.
+Rumusnya :
+Lihat gambar Rumus_KMeans_Clustering.png
+
+Penjelasan dari rumus :
+xi , xj adalah dua buah data yang akan dihitung jaraknya, dan p = dimensi/jumlah dari data
+Terdapat beberapa tipe perhitungan jarak yang dapat digunakan, yaitu :
+1. Jarak Manhattan di mana g = 1
+2. Jarak Euclidean di mana g = 2
+3. Jarak Chebychev di mana g = ∞
+
+Masih bingung, cara menentukan centroid bagaimana caranya?
+
+Untuk menentukan centroid, pada awalnya kita perlu mendefinisikan jumlah centroid (K) yang diinginkan, 
+semisalnya kita menetapkan jumlah K = 3; maka pada awal iterasi, algorithm akan secara random 
+menentukan 3 centroid. Setelah itu, objek/sample/data point yang lain akan dikelompokkan sebagai 
+anggota dari salah satu centroid yang terdekat, sehingga terbentuk 3 cluster data.
+
+Iterasi selanjutnya, titik-titik centroid diupdate atau berpindah ke titik yang lain, 
+dan jarak dari data point yang lain ke centroid yang baru dihitung kembali, 
+kemudian dikelompokkan kembali berdasarkan jarak terdekat ke centroid yang baru. 
+Iterasi akan terus berlanjut hingga diperoleh cluster dengan error terkecil, 
+dan posisi centroid tidak lagi berubah.
+Lihat gambar Centroid.png
+
+Apakah ada perbedaan prosedur antara unsupervised learning dan supervised learning?
+
+Secara prosedur, tahap eksplorasi data untuk memahami karakteristik data, 
+dan tahap preprocessing tetap dilakukan. Tetapi dalam unsupervised learning, 
+kita tidak membagi dataset ke feature dan label; dan juga ke dalam training dan test dataset, 
+karena pada dasarnya kita tidak memiliki informasi mengenai label/target data.
